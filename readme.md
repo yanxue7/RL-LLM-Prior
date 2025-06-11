@@ -42,6 +42,9 @@ python test_alfworld.py --epoch 800 --eval_interval 40 --target_update 10 --lr 5
 
 ```
 python train_overcooked.py --epoch 200 --eval_interval 20 --target_update 20 --update_type soft --epsilon 0.2 --lr 5e-4 --batch 64 --capacity 4000 --train_iter 40 --device 0 --action_normalize True --print_interval 1 --cql_coef 0.0  --seed 1234 --num_gens 5 --gen_batch_size 5 --alg dqn --alpha 10 --checkpoint_path overcooked
+
+python test_overcooked_salad.py --epoch 300 --eval_interval 20 --target_update 20 --update_type soft --epsilon 0.2 --lr 5e-4 --batch 64 --capacity 4000 --train_iter 40 --device 0 --action_normalize True --print_interval 1 --cql_coef 0.0  --seed 1234 --num_gens 5 --gen_batch_size 5 --alg prior --checkpoint_path overcooked_salad
+
 ```
 
 
